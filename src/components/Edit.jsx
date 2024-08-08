@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import useUser from '../hooks/useUser'
 
-const Primary = () => {
+const Edit = () => {
   const { name, age, email, friends, setName, setAge, setEmail, addFriend, removeFriend } = useUser()
   const nameRef = useRef()
   const ageRef = useRef()
@@ -58,4 +58,4 @@ const Primary = () => {
   )
 }
 
-export default Primary
+export default Edit

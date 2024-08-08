@@ -1,21 +1,21 @@
 import React from 'react'
 import { Route, Routes, Link, BrowserRouter as Router} from 'react-router-dom'
-import Primary from './components/Primary'
-import Secondary from './components/Secondary'
+import Read from './components/Read'
 import Home from './components/Home'
+import Edit from './components/Edit'
 
 const MiRouter = () => {
   return (
     <Router>
         <div>
-            <Link to="/primary"><button>Primary</button></Link>
-            <Link to="/secondary"><button>Secondary</button></Link>
+            <Link to="/edit"><button>Edit</button></Link>
+            <Link to="/read"><button>Read</button></Link>
             <Link to="/"><button>Home</button></Link>
         </div>
         <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/primary' element={<Primary />}/>
-            <Route path='/secondary' element={<Secondary />}/>
+            <Route path='/edit' element={<Edit />}/>
+            <Route path='/read' element={<Read />}/>
         </Routes>
 
     </Router>
