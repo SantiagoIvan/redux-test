@@ -6,7 +6,7 @@ const useUser = () => {
     // PARA DISPARAR ACCIONES DE CAMBIO DE ESTADO
     const dispatch = useDispatch()
     // GETTERS
-    const name = useSelector(state => state.user.name);
+    const name = useSelector(state => state.user.name); //user es el nombre del slice
     const age = useSelector(state => state.user.age);
     const email = useSelector(state => state.user.email);
     const friends = useSelector(state => state.user.friends);
